@@ -26,7 +26,7 @@ export default {
     poster: String,
     title: String,
     author: String,
-    year: Number,
+    year: String,
   },
 };
 </script>
@@ -35,7 +35,7 @@ export default {
 
 .artist_card {
   height: 100%;
-  background-color: rgb(60, 60, 85);
+  background-color: #2E3A46;
   &:hover{
     cursor: pointer;
     box-shadow: 5px 5px 10px 5px #00ff80;
@@ -50,6 +50,6 @@ export default {
 
   .author,
   .year {
-    color: grey;
+    color: #656C71;
   }
 </style>

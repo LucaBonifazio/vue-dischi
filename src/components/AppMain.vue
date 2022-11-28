@@ -49,7 +49,7 @@ export default {
 <style lang="scss" scoped>
   main {
     height: 90vh;
-    background-color: rgb(42, 52, 73);
+    background-color: #1E2D3B;
     overflow: auto;
     .container {
       display: flex;
