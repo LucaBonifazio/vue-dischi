@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppHeader />
+    <AppHeader @change="onChange" />
     <AppMain />
   </div>
 </template>
@@ -14,6 +14,15 @@ export default {
   components: {
     AppHeader,
     AppMain,
+  },
+  props: {
+    genre: String,
+    selectedValue: String,
+  },
+  computed: {
+    filteredProducts() {
+      return this.products.filter((product) => product.type === this.selectedValue);
+    },
   },
 };
 </script>

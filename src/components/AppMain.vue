@@ -2,7 +2,7 @@
   <main class="d-flex p-1">
     <div
       v-if="arrAlbums"
-      class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 container"
+      class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 container"
     >
       <AppMainCard
         v-for="album in arrAlbums"
